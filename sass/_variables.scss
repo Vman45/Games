@@ -1,0 +1,11 @@
+$lobster-font:'Lobster', cursive;
+$hand-font:'Indie Flower', cursive;
+$white-text:white;
+$lightgrey-text: lightgrey;
+$thin-weight: 100;
+
+@keyframes heartbeat{
+    0%{transform: scale(1,1) ;}
+    50%{transform: scale(.95,.95)}
+    100%{transform: scale(1,1);}
+}

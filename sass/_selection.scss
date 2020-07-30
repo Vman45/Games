@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+//RESETS 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:$white-text
+} 
+/////////////////////////
+
+.selection{
+    max-width:100%;
+    height: 100vh;
+
+    background-image: linear-gradient(to right, #ff2a00,#c70e4b,#a50447);
+    @media only screen and (max-width: 768px){
+        height:100%;
+    }
+    &__title{
+        font-family: $lobster-font;
+        color: $white-text;
+        font-size: 5.8rem;
+        font-weight: $thin-weight;
+        padding: 3rem 0;
+        text-shadow: 4px 4px #7c2020;
+        animation: heartbeat 1.2s linear infinite  ;
+    }
+
+    &__grid{
+        width: 1200px;
+        max-width:100%;
+        margin: auto;
+        display: grid;
+        grid-template: 1fr 1fr / 33% 33% 33%;
+        grid-row-gap: 10px;;
+        padding-bottom: 2rem;
+        @media only screen and (max-width: 768px){
+            grid-template: 1fr 1fr 1fr/ 50% 50%;
+        }
+        @media only screen and (max-width: 768px){
+            grid-template: 1fr 1fr 1fr 1fr 1fr 1fr/ 100%;
+        }
+    }
+
+    &__card{
+        max-width:100%;
+        padding:1rem;
+        &:hover{cursor: pointer;transform: scale(1.03);box-shadow: 0px 5px 25px rgba(255, 255, 255,0.5);border-radius: 10px;;}
+    }
+    &__game{
+        font-family: $hand-font;
+        color: $white-text;
+        font-size: 2rem;
+        font-weight: $thin-weight;
+    }
+
+
+
+    &__footer{
+        padding: 2rem;
+        font-family: $hand-font;
+        font-size: 1.1rem;
+        color: $white-text;
+    }
+}
