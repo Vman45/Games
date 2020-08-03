@@ -12,15 +12,17 @@ a{
     color:$white-text
 } 
 /////////////////////////
-
-.selection{
+.container-fluid{
     max-width:100%;
     height: 100vh;
-
-    background-image: linear-gradient(to right, #ff2a00,#c70e4b,#a50447);
     @media only screen and (max-width: 1024px){
         height:100%;
     }
+}
+.selection{
+    
+    background-image: linear-gradient(to right, #ff2a00,#c70e4b,#a50447);
+    
     &__title{
         font-family: $lobster-font;
         color: $white-text;
