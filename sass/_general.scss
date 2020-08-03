@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+//RESETS 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:$white-text
+} 
+/////////////////////////
+.container-fluid{
+    max-width:100%;
+    height: 100vh;
+    @media only screen and (max-width: 1023px){
+        height:100%;
+    }
+}
+.title{
+    font-family: $lobster-font;
+    color: $white-text;
+    font-size: 5.8rem;
+    max-width:90%;
+    font-weight: $thin-weight;
+    padding: 3rem 0;
+    text-shadow: 4px 4px #7c2020;
+    @media screen and (max-width:408px){
+        font-size: 3.1rem;
+        margin-right:1rem;
+    }
+    
+}
+.text{
+    max-width:100%;
+    font-family: $hand-font;
+    color: $white-text;
+    font-size: 2rem;
+    font-weight: $thin-weight;
+    @media screen and (max-width:408px) {
+        font-size:1.5rem;
+    }
+}
+.small-text{
+    font-size:1.4rem;
+    @media screen and (max-width:408px) {
+        font-size:1.1rem;
+    }
+}
+
+.home-icon{
+    border: 5px solid white;
+    padding:.5rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    box-shadow: 2px 4px black 10px;;
+    &:hover{
+        border: 5px solid #000000;
+        color:black;
+    }
+}
+
+.footer{
+    padding: 2rem;
+    font-family: $hand-font;
+    font-size: 1.1rem;
+    color: $white-text;
+}
+
+input{
+    padding: .5rem 1rem;
+}
+input[type="submit"]{
+    cursor: pointer;
+}
+form{
+    margin:3rem 1rem ;
+}

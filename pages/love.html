@@ -5,21 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../dist/images/heart.png" type="image/x-icon">
     <link rel="stylesheet" href="../dist/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <title>Love Calculator</title>
+    
 </head>
 <body>
     <main class="container-fluid love">
         <center>
-            <a href="../index.html">Home</a>
-            <h2>The love calculator</h2>
-
+            <a href="../index.html"><i class="home-icon fas fa-home fa-3x"></i></a>
+            <h2 class="title title_love">The Love Calculator</h2>
+            <p class=" text small-text">Discover now how compatible are you with your crush.</p>
+            <br>
+            <div id="loveDescription">
             <form action="">
-                <input type="text" name="" id="">
-                +
-                <input type="text" name="" id=""><br>
-                <input type="submit" value="Calculate">
+                <div class="idk">
+                <input type="text" name="you" id="you" maxlength="12" placeholder="Your Name">
+                <i class="fas fa-heart fa-4x" style="color:#4e0a72"></i>
+                <input type="text" name="she" id="she" maxlength="12" placeholder="Her/His Name">
+                </div>
+                <div>
+                <input type="submit" id="calculate" value="Calculate">
+                </div>
             </form>
+            </div>
+            <footer class="footer">
+                &copy Aphelix Corporation 2020 All rights reserved Web AphelixGames
+            </footer>
         </center>
     </main>
+    <script src="../dist/scripts/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,14 @@
 .love{
-    background-image: linear-gradient(to top, #ff2a00,#c70e4b,#a50447);
+    background-image: linear-gradient(to top, #A314C4,#8B12BA,#600e8b);
+}
+.title_love{
+    text-shadow: 4px 4px #A314C4;
+    @media screen and (max-width:408px){
+        font-size: 3.8rem;
+        margin-right:1rem;
+    }
+}
+.idk{
+    display: inline-block;
+    justify-content: center;
 }

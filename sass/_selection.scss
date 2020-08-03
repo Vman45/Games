@@ -1,41 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-
-//RESETS 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-a{
-    text-decoration: none;
-    color:$white-text
-} 
-/////////////////////////
-.container-fluid{
-    max-width:100%;
-    height: 100vh;
-    @media only screen and (max-width: 1024px){
-        height:100%;
-    }
-}
 .selection{
     
-    background-image: linear-gradient(to right, #ff2a00,#c70e4b,#a50447);
+    background-image: linear-gradient(to right, #d61919,#ca235b,#c2155d);
     
-    &__title{
-        font-family: $lobster-font;
-        color: $white-text;
-        font-size: 5.8rem;
-        max-width: 50%;
-        font-weight: $thin-weight;
-        padding: 3rem 0;
-        text-shadow: 4px 4px #7c2020;
+    .title{
         animation: heartbeat 1.2s linear infinite  ;
-        @media screen and (max-width:408px){
-            font-size: 4.5rem;
-            margin-right:1rem;
-        }
     }
 
     &__grid{
@@ -59,30 +27,13 @@ a{
         padding:1rem;
         &:hover{cursor: pointer;transform: scale(1.03);box-shadow: 0px 5px 25px rgba(255, 255, 255,0.5);border-radius: 10px;;}
     }
-    &__game{
-        font-family: $hand-font;
-        color: $white-text;
-        font-size: 2rem;
-        font-weight: $thin-weight;
-        @media screen and (max-width:408px) {
-            font-size:1.5rem;
-        }
-        &__image{
+    &__image{
             max-width:80%;
             border:2px solid white;
             border-radius: 10px;
             @media screen and (max-width){
                 max-width: 95%;
             }
-        }
     }
 
-
-
-    &__footer{
-        padding: 2rem;
-        font-family: $hand-font;
-        font-size: 1.1rem;
-        color: $white-text;
-    }
 }
