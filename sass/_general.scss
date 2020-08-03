@@ -73,9 +73,11 @@ a{
 
 input{
     padding: .5rem 1rem;
+    margin: 0 2rem;
 }
 input[type="submit"]{
     cursor: pointer;
+    margin:1.5rem;
 }
 form{
     margin:3rem 1rem ;
