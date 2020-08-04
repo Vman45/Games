@@ -1,5 +1,5 @@
 .love{
-    background-image: linear-gradient(to top, #A314C4,#8B12BA,#600e8b);
+    background-image: linear-gradient(to top, #A314C4,#570c75,#4b0770);
 }
 .title_love{
     text-shadow: 4px 4px #A314C4;
@@ -8,7 +8,22 @@
         margin-right:1rem;
     }
 }
-.idk{
-    display: inline-block;
-    justify-content: center;
+#calculate,#tryAgain{
+    cursor: pointer;
+    margin-top: 3rem;
+    border: 0;
+    border-radius: 1.9rem;
+    padding: .8rem 1.7rem;
+    background-color: #fad400;
+    color: black;
+    letter-spacing: 1.6px;
 }
+#heart{
+    margin: 1rem 0;
+}
+.loveDescriptions{
+    display: none;
+    visibility: hidden;
+}
+
+#tryAgain,#lovePercentage{display:none;height:0;margin-top:0}

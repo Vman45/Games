@@ -14,20 +14,26 @@
         <center>
             <a href="../index.html"><i class="home-icon fas fa-home fa-3x"></i></a>
             <h2 class="title title_love">The Love Calculator</h2>
-            <p class=" text small-text">Discover now how compatible are you with your crush.</p>
+            <p class=" text small-text">Discover now how compatible are YOU and YOUR CRUSH.</p>
             <br>
             <div id="loveDescription">
             <form id="loveForm" action="">
                 <div class="idk">
                 <input type="text" name="you" id="you" minlength="2" maxlength="12" required placeholder="Your Name">
-                <i class="fas fa-heart fa-4x" style="color:#4e0a72"></i>
+                <i class="fas fa-heart fa-4x" id="heart"style="color:#A314C4"></i>
                 <input type="text" name="she" id="she" minlength="2" maxlength="12" required placeholder="Her/His Name">
                 </div>
                 <div>
-                <input type="submit" id="calculate" value="Calculate">
+                <input type="submit" id="calculate" class="text small-text" value="Calculate">
                 </div>
             </form>
             </div>
+
+            <div class="loveDesciptions">
+                <h1 class="title title_love" id="lovePercentage"></h1>
+                <button id="tryAgain" class="text small-text"  >Try Again</button>
+            </div>
+
             <footer class="footer">
                 &copy Aphelix Corporation 2020 All rights reserved Web AphelixGames
             </footer>
